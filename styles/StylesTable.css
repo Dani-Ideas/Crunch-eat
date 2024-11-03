@@ -36,6 +36,11 @@ footer>nav>ul{
     gap: 1rem;
 }
 
+
+.icon-wrapper {
+    gap: 2rem;
+}
+
 #W1 {
     background: none; /* Eliminar imagen fija en fondo para tablet */
 }

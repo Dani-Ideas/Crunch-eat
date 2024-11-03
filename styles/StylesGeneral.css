@@ -260,7 +260,7 @@ body>main>section>img{
     padding: 20px;
 }
 
-#W1>div>button{
+#W1 button{
     border-radius: 1rem;
     padding: 0.5rem;
 }
@@ -268,23 +268,32 @@ body>main>section>img{
 #W3{
     max-height: 25vh;
     display:flex;
+    overflow: hidden;
     flex-wrap: nowrap;
     justify-content: space-around;
 }
 
-#W3>img{
+#W3 img{
     max-width: 25vw;
+}
+
+#W4 img{
+    width: 100vw;
 }
 
 #W5{
     display: flex;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 
-#W5>div>img{
+#W5>div img{
     max-width: 30vw;
 }
-
+#W5>div p{
+    padding: 1rem;
+    max-width: 30vw
+}
 @media (max-width: 375px) {
     #bar_search>form {
         display: flex;
@@ -293,4 +302,51 @@ body>main>section>img{
     #bar_search>form>button{
         order: -1;
     }
+}
+
+
+/*Estilos de menu Generales*/
+.product-grid {
+    display: grid;
+    gap: 16px;
+    padding: 20px;
+}
+
+.product-card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.product-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f1f1f1;
+    height: 150px;
+}
+
+.product-image img {
+    max-height: 80%;
+    max-width: 80%;
+    object-fit: contain;
+}
+
+.product-info {
+    padding: 16px;
+    text-align: center;
+}
+
+.product-info h2 {
+    font-size: 1.1em;
 }
